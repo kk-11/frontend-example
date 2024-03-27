@@ -52,20 +52,9 @@ const Button = styled.button`
     padding: 16px 0;
 `;
 
-const Logo = styled.img<{ $variant?: "signin" }>`
-    ${(p) =>
-        p.$variant === "signin" &&
-        `
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    `}
-    filter: drop-shadow(0 0 0.75rem #333);
-`;
 const Error = styled.aside`
     padding-top: 30px;
     color: red;
 `;
 
-export { Panel, StyledInput, StyledLabel, Text, Title, Button, Logo, Error };
+export { Panel, StyledInput, StyledLabel, Text, Title, Button, Error };

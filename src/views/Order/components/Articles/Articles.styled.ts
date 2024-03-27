@@ -5,8 +5,6 @@ const StyledImage = styled.img`
     width: auto;
     border-radius: 10px;
     margin: 20px auto;
-
-
 `;
 
 export { StyledImage };

@@ -8,11 +8,9 @@ import {
     Text,
     Title,
     Button,
-    Logo,
-    Error
+    Error,
 } from "../shared.styled";
 import { useSetOrder, useQueryParams, useLocalStorage } from "../../hooks";
-
 
 const SignIn = () => {
     const queryParams = useQueryParams();
@@ -20,7 +18,7 @@ const SignIn = () => {
     const [zipCode, setZipCode] = useState<string>(queryParams.zip);
     const [orderNo, setOrderNo] = useState<string>(queryParams.orderNo);
     const { loading, error, setFormValid } = useSetOrder(zipCode, orderNo);
-    
+
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setFormValid(true);
@@ -30,7 +28,6 @@ const SignIn = () => {
 
     return (
         <Panel>
-            <Logo src="/logo.png" $variant="signin" />
             <Title role="title">Track your order</Title>
             {previousOrder && <Link to="/order">View current order</Link>}
             <Text>

@@ -2,7 +2,7 @@ import express from "express";
 import orders from "./orders.js";
 const app = express();
 const PORT = 5000;
-const APP_URL = "http://127.0.0.1:5173";
+const APP_URL = "http://localhost:5173";
 
 app.use((_, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", APP_URL);

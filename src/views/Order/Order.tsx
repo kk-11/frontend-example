@@ -18,7 +18,6 @@ const Order = () => {
     return (
         <>
             <Nav>
-                <Logo src="./logo.png" />
                 <Link to="/">Check a different order</Link>
             </Nav>
             <Wrapper>
